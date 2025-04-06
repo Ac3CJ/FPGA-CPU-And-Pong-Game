@@ -75,7 +75,7 @@ This project began with the design of a custom CPU from the ground up, using Ver
 
 ## VGA Output
 
-- **Resolution**: 640x480 @ 60Hz  
+- **Resolution**: 640x480 @ 30Hz  
 - **Color Depth**: 3-bit (R, G, B via GPIO)  
 - **Sync Signals**: Horizontal and vertical sync generated in real-time  
 - **Display**:
@@ -116,10 +116,8 @@ This project began with the design of a custom CPU from the ground up, using Ver
 6. System integration and timing validation  
 
 **Tools used:**
-- Vivado / Quartus  
-- ModelSim / GTKWave  
-- Verilog HDL  
-- Custom assembler script (optional)
+- Quartus Prime
+- SystemVerilog
 
 ---
 
@@ -134,13 +132,13 @@ This project began with the design of a custom CPU from the ground up, using Ver
 ## FAQ
 
 ### Q: What language is the game written in?  
-A: It’s written in assembly for the custom CPU instruction set.
+A: It is all written in SystemVerilog
 
 ### Q: How is video handled?  
 A: A VGA controller module generates the required sync and pixel timing signals. The framebuffer is drawn dynamically based on game state.
 
 ### Q: Can I use a different FPGA board?  
-A: Yes, but make sure to update pin constraints and verify VGA compatibility.
+A: No, I do not recommend deviating from the FPGA board used
 
 ### Q: Does it support sound?  
 A: Not currently, but the CPU design is modular, and sound generation can be added as a peripheral.
