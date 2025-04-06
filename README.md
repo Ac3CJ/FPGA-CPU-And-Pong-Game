@@ -1,4 +1,4 @@
-<p align="center"><img src="https://cdn-icons-png.flaticon.com/512/3704/3704914.png" alt="FPGA CPU Logo" width="100"></p>
+<p align="center"><img src="https://www.teso.rs/img/services-icon-04.png" alt="FPGA CPU Logo" width="100"></p>
 <h1 align="center"> FPGA Pong CPU </h1>
 
 <div align="center">
